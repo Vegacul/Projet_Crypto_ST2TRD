@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="WpfAppTEST2.Views.Histo_Chart_View"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfAppTEST2.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1000">
+    <Grid Background="#FF3A0F8F">
+
+
+        <WpfPlot x:Name="WpfPlot" Margin="50,100,225,50"  Loaded="WpfPlot_Loaded" Background="#FF3A0F8F" Foreground="White"/>
+        <Label x:Name="label2" Content="Asset 2 :"  Margin="400,60,500,510" RenderTransformOrigin="0.217,0.422" Foreground="White" FontWeight="Bold"/>
+        <Label x:Name="label1" Content="Asset 1 :"  Margin="50,60,850,510"  RenderTransformOrigin="0.217,0.422" Foreground="White" FontWeight="Bold"/>
+        <TextBox x:Name="ASSET2" Margin="455,65,450,510" Text="USD" TextWrapping="Wrap" Background="#FFC4AAF3" />
+        <TextBox x:Name="ASSET1" Margin="105,65,800,510" Text="BTC" TextWrapping="Wrap" Background="#FFC4AAF3"/>
+
+        <Button x:Name="Button1D" Content="1D"   Margin="800,100,10,450" Click="Button1D_Click" Background="#FFC4AAF3" Foreground="White" FontSize="22" FontWeight="Bold" />
+        <Button x:Name="Button7D" Content="7D" Margin="800,175,10,375" Click="Button7D_Click" Background="#FFC4AAF3" Foreground="White" FontSize="22" FontWeight="Bold" />
+        <Button x:Name="Button14D" Content="14D"  Margin="800,260,10,290" Click="Button14D_Click" Background="#FFC4AAF3" Foreground="White" FontSize="22" FontWeight="Bold" />
+        <Button x:Name="Button1M" Content="1M"  Margin="800,335,10,215" Click="Button1M_Click" Background="#FFC4AAF3" Foreground="White" FontSize="22" FontWeight="Bold" />
+        <Label Content="Historic Chart :" HorizontalAlignment="Left" Margin="150,10,0,0" VerticalAlignment="Top" Width="340" Height="45" FontWeight="Bold" FontSize="24" Foreground="White"/>
+        <Label Content="Current Price :" HorizontalAlignment="Left" Margin="800,416,0,0" VerticalAlignment="Top" Width="190" FontWeight="Bold" FontSize="14" Background="#FF3A0F8F" Foreground="White"/>
+        <Label Content="BTC Price :      B" HorizontalAlignment="Left" Margin="800,447,0,0" VerticalAlignment="Top" Width="95" Background="#FF3A0F8F" Foreground="White"/>
+        <Label Content="USD Price :      $" HorizontalAlignment="Left" Margin="800,478,0,0" VerticalAlignment="Top" Width="95" Background="#FF3A0F8F" Foreground="White"/>
+        <Label Content="EUR Price :      €" HorizontalAlignment="Left" Margin="800,509,0,0" VerticalAlignment="Top" Width="95" Background="#FF3A0F8F" Foreground="White"/>
+        <Label x:Name="BTCPrice" Content="B" HorizontalAlignment="Left" Margin="895,447,0,0" VerticalAlignment="Top" Width="95" Background="#FF3A0F8F" Foreground="White"/>
+        <Label x:Name="USDPrice" Content="$" HorizontalAlignment="Left" Margin="895,478,0,0" VerticalAlignment="Top" Width="95" Background="#FF3A0F8F" Foreground="White"/>
+        <Label x:Name="EURPrice" Content="€" HorizontalAlignment="Left" Margin="895,509,0,0" VerticalAlignment="Top" Width="95" Background="#FF3A0F8F" Foreground="White"/>
+
+
+    </Grid>
+</UserControl>

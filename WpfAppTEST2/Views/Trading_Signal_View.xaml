@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="WpfAppTEST2.Views.Trading_Signal_View"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfAppTEST2.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1000">
+    <Grid Background="#FF3A0F8F">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="inOutVar :" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="99" FontSize="18" FontWeight="Bold" Foreground="White"/>
+        <Label Content="Score :" Grid.Column="1" HorizontalAlignment="Left" Margin="10,74,0,0" Grid.Row="1" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" Foreground="White"/>
+        <Label x:Name="Signal1Score" Content="Label" Grid.Column="1" HorizontalAlignment="Left" Margin="80,74,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" Foreground="White"/>
+        <Label Content="Signal :" Grid.Column="3" HorizontalAlignment="Left" Margin="10,74,0,0" Grid.Row="1" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" Foreground="White"/>
+        <Label x:Name="Signal1Signal" Content="Label" Grid.Column="3" HorizontalAlignment="Left" Margin="80,74,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" Foreground="White"/>
+        <Label Content="largetxsVar :" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="119" FontSize="18" FontWeight="Bold" Foreground="White"/>
+        <Label Content="Score :" Grid.Column="1" HorizontalAlignment="Left" Margin="10,60,0,0" Grid.Row="2" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" Foreground="White"/>
+        <Label x:Name="Signal2Score" Content="Label" Grid.Column="1" HorizontalAlignment="Left" Margin="80,60,0,0" Grid.Row="2" VerticalAlignment="Top" Width="115" Foreground="White"/>
+        <Label Content="Signal :" Grid.Column="3" HorizontalAlignment="Left" Margin="10,60,0,0" Grid.Row="2" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" Foreground="White"/>
+        <Label x:Name="Signal2Signal" Content="Label" Grid.Column="3" HorizontalAlignment="Left" Margin="80,60,0,0" Grid.Row="2" VerticalAlignment="Top" Width="120" Foreground="White"/>
+        <Label Content="addresses&#xD;&#xA;Net&#xD;&#xA;Growth :" HorizontalAlignment="Center" Margin="0,24,0,0" Grid.Row="3" VerticalAlignment="Top" Width="99" FontSize="18" FontWeight="Bold" Foreground="White"/>
+        <Label Content="Score :" Grid.Column="1" HorizontalAlignment="Left" Margin="10,74,0,0" Grid.Row="3" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" Foreground="White"/>
+        <Label x:Name="Signal3Score" Content="Label" Grid.Column="1" HorizontalAlignment="Left" Margin="80,74,0,0" Grid.Row="3" VerticalAlignment="Top" Width="120" Foreground="White"/>
+        <Label Content="Signal :" Grid.Column="3" HorizontalAlignment="Left" Margin="10,74,0,0" Grid.Row="3" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" Foreground="White"/>
+        <Label x:Name="Signal3Signal" Content="Label" Grid.Column="3" HorizontalAlignment="Left" Margin="80,74,0,0" Grid.Row="3" VerticalAlignment="Top" Width="120" Foreground="White"/>
+        <Label Content="concentration&#xD;&#xA;Var :" HorizontalAlignment="Center" Margin="0,36,0,0" Grid.Row="4" VerticalAlignment="Top" Width="141" FontSize="18" FontWeight="Bold" Foreground="White"/>
+        <Label Content="The Concentration signal is based on the accumulation (bullish) or reduction (bearish) of addresses &#xD;&#xA;with more than 0.1% of the circulating supply." Grid.Column="1" HorizontalAlignment="Left" Margin="0,119,0,0" Grid.Row="3" VerticalAlignment="Top" Grid.ColumnSpan="4" Width="752" FontSize="13" Height="45" Grid.RowSpan="2" FontStyle="Italic" Foreground="White"/>
+        <Label Content="Score :" Grid.Column="1" HorizontalAlignment="Left" Margin="10,60,0,0" Grid.Row="4" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="Signal4Score" Content="Label" Grid.Column="1" HorizontalAlignment="Left" Margin="80,60,0,0" Grid.Row="4" VerticalAlignment="Top" Width="115" Foreground="White"/>
+        <Label Content="Signal :" Grid.Column="3" HorizontalAlignment="Left" Margin="10,60,0,0" Grid.Row="4" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="Signal4Signal" Content="Label" Grid.Column="3" HorizontalAlignment="Left" Margin="80,60,0,0" Grid.Row="4" VerticalAlignment="Top" Width="120" Foreground="White"/>
+        <Label Content="Trading Signial :" Grid.Column="1" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Width="380" FontSize="24" Grid.ColumnSpan="2" FontWeight="Bold" Foreground="White"/>
+        <Label Content="Momentum signal that gives an indication of the tokens underlying network health &#xD;&#xA;by measuring the amount of new addresses minus the addresses that have their balances emptied.&#xA; It is bullish when more addresses are being created than emptied." Grid.Column="1" HorizontalAlignment="Right" Margin="0,1,32,0" Grid.Row="3" VerticalAlignment="Top" Width="768" Height="68" Grid.ColumnSpan="4" FontSize="13" FontStyle="Italic" Foreground="White"/>
+        <Label Content="Momentum signal that is bullish when the short term trend of the number of txs &gt; $100k is greater than the long term average." HorizontalAlignment="Right" Grid.Row="2" VerticalAlignment="Top" Width="752" Height="38" Grid.Column="1" Grid.ColumnSpan="4" Margin="0,0,48,0" FontSize="13" FontStyle="Italic" Foreground="White"/>
+        <Label Content="This momentum signal calculates the net change of in/out of the money addresses,&#xD;&#xA; if the number of &quot;In the Money&quot; addresses is increasing this would be a bullish signal.&#xA; In the money means addresses that would make a profit on the tokens they hold because they acquired the tokens at a lower price.&#xA;" HorizontalAlignment="Right" Margin="0,0,32,51" Width="768" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="4" FontSize="13" FontStyle="Italic" Foreground="White"/>
+        <TextBox x:Name="ASSET" Grid.Column="1" HorizontalAlignment="Center" Margin="0,69,0,0" Text="BTC" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Height="20" Background="#FFC4AAF3"/>
+        <Button Content="LOAD" Grid.Column="2" HorizontalAlignment="Center" Margin="0,69,0,0" VerticalAlignment="Top" Click="Button_Click" Width="180" Background="#FFC4AAF3"/>
+        <Label Content="___________________________________________________________________________________________________________________________________________________________________________________________________________________" Margin="10,89,0,0" Width="490" HorizontalAlignment="Left" Grid.ColumnSpan="3" Foreground="White" />
+        <Label Content="__________________________________________________________________________________________________________________________________________________________________________________________________" Margin="0,89,0,0" Width="491" HorizontalAlignment="Left" Grid.ColumnSpan="3" Grid.Row="1" Foreground="White" />
+        <Label Content="__________________________________________________________________________________________________________________________________________________________________________________________________" Margin="10,85,0,4" Width="980" HorizontalAlignment="Left" Grid.Row="2" Grid.ColumnSpan="5" Foreground="White" />
+        <Label Content="__________________________________________________________________________________________________________________________________________________________________________________________________" Margin="10,89,0,0" Width="980" HorizontalAlignment="Left" Grid.Row="3" Grid.ColumnSpan="5" Foreground="White" />
+        <Label Content="___________________________________________________________________________________________________________________________________________________________________________________________________________________" Margin="78,89,0,0" Width="490" HorizontalAlignment="Left" Grid.ColumnSpan="3" Grid.Column="2" Foreground="White" />
+        <Label Content="___________________________________________________________________________________________________________________________________________________________________________________________________________________" Margin="78,89,0,0" Width="490" HorizontalAlignment="Left" Grid.ColumnSpan="3" Grid.Column="2" Grid.Row="1" Foreground="White" />
+        <Label Content="___________________________________________________________________________________________________________________________________________________________________________________________________________________" Margin="78,85,0,4" Width="490" HorizontalAlignment="Left" Grid.ColumnSpan="3" Grid.Column="2" Grid.Row="2" Foreground="White" />
+        <Label Content="___________________________________________________________________________________________________________________________________________________________________________________________________________________" Margin="78,89,0,0" Width="490" HorizontalAlignment="Left" Grid.ColumnSpan="3" Grid.Column="2" Grid.Row="3" Foreground="White" />
+    </Grid>
+</UserControl>
